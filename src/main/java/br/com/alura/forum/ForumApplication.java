@@ -2,10 +2,14 @@ package br.com.alura.forum;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 
 //@ComponentScan
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+
+
 @SpringBootApplication
+@EnableSpringDataWebSupport
 public class ForumApplication {
 
 	

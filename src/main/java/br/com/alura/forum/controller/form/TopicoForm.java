@@ -12,16 +12,19 @@ public class TopicoForm {
 
 	@NotNull @NotNull @Length(min = 5)
 	private String titulo;
+	
 	@NotNull @NotNull @Length(min = 10)
 	private String mensagem; 
+	
 	@NotNull @NotNull 
 	private String nomeCurso;
 	
 	
 	
+	
 	public Topico converter(CursoRepository cursoRepository) {
 		Curso curso = cursoRepository.findByNome(nomeCurso);
-		return new Topico( titulo, mensagem ,  curso);	
+		return new Topico( titulo, mensagem, curso);	
 	}
 	
 	public String getTitulo() {
@@ -47,6 +50,6 @@ public class TopicoForm {
 	public void setNomeCurso(String nomeCurso) {
 		this.nomeCurso = nomeCurso;
 	}
-	
+
 
 }

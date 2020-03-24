@@ -1,4 +1,7 @@
-INSERT INTO USUARIO(nome, email, senha) VALUES('Aluno', 'aluno@email.com', '123456');
+/* senha usando o BCryptPasswordEncoder*/
+INSERT INTO USUARIO(nome, email, senha) VALUES('Aluno', 'aluno@email.com', '$2a$10$rWw75rnxVMXbeV71a.q7futXN9nmsCFmlot8459oRVF0D.VrOVitq');
+
+
 
 INSERT INTO CURSO(nome, categoria) VALUES('Spring Boot', 'Programação');
 INSERT INTO CURSO(nome, categoria) VALUES('HTML 5', 'Front-end');
